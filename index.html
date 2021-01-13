@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SI Invoice</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container" id="main">
+    <div class="section" id="transaksi">
+      <h1 class="section-title">Transaksi</h1>
+      <form action="" id="form_transaksi">
+        <div class="cols">
+          <div class="form-field col col-side-to-side">
+            <label for="date" class="field-label">Date</label>
+            <input type="date" name="date" id="date">
+          </div>
+
+          <div class="form-field col col-side-to-side">
+            <label for="no_transaksi" class="field-label">No Transaksi</label>
+            <input type="text" name="no_transaksi" id="no_transaksi">
+          </div>
+        </div>
+
+        <div class="form-field form-field_sell_as">
+          <label for="sell_as" class="field-label">Jual Sebagai</label>
+          <div class="cols">
+            <div class="col col-side-to-side">
+              <input type="radio" name="sell_as" id="bina_jaya" value="bina_jaya">
+              <label class="radio-lable" for="bina_jaya">CV. BINA JAYA TEKNIKA</label>
+            </div>
+            <div class="col col-side-to-side">
+              <input type="radio" name="sell_as" id="adimas_putra" value="adimas_putra">
+              <label class="radio-lable" for="adimas_putra">CV. ADIMAS PUTRA</label>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="section" id="customer">
+      <h1 class="section-title">Customer</h1>
+      <form action="" id="form_customer">
+        <div class="form-field">
+          <label for="customer_name" class="field-label">Nama Customer</label>
+          <input type="text" name="customer_name" id="customer_name">
+        </div>
+
+        <div class="form-field">
+          <label for="customer_name" class="field-label">Alamat (Jalan)</label>
+          <input type="text" name="address_road" id="address_road">
+        </div>
+
+        <div class="form-field">
+          <label for="address_kecamatan" class="field-label">Alamat (Kecamatan)</label>
+          <input type="text" name="address_kecamatan" id="address_kecamatan">
+        </div>
+
+        <div class="form-field">
+          <label for="address_city" class="field-label">Alamat (Kota/Kabupaten)</label>
+          <input type="text" name="address_city" id="address_city">
+        </div>
+      </form>
+    </div>
+
+    <div class="section" id="keranjang">
+      <h1 class="section-title">Keranjang</h1>
+      <form action="" id="form_keranjang">
+        <div class="cols">
+          <div class="form-field form-field_item col ">
+            <label for="item_name" class="field-label">Nama Barang/Service</label>
+            <input type="text" name="item_name" id="item_name">
+          </div>
+          <div class="form-field form-field_qty col">
+            <label for="item_qty" class="field-label">Qty</label>
+            <input type="number" name="item_qty" id="item_qty" min="0.1" max="999">
+          </div>
+
+          <div class="form-field form-field_price col ">
+            <label for="item_price" class="field-label">Harga Satuan</label>
+            <input type="text" name="item_price" id="item_price">
+          </div>
+
+          <div class="btn btn-add-item col">
+            <button>+</button>
+          </div>
+        </div>
+      </form>
+
+      <table id="keranjang-table">
+        <tr>
+          <th>Nama Barang/Service</th>
+          <th>Qty</th>
+          <th>Harga Satuan</th>
+          <th>Jumlah</th>
+          <th></th>
+        </tr>
+
+        <tr>
+          <td>xxxxx xxx xxxx</td>
+          <td>xxx</td>
+          <td>xxxxxx</td>
+          <td>xxxxxxxx</td>
+          <td>x</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
