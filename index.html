@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
@@ -88,7 +91,9 @@
           </div>
 
           <div class="btn btn-add-item col">
-            <button>+</button>
+            <span><i class="fas fa-plus btn-item btn-add"></i></span>
+            <!-- <button><i class="fas fa-plus btn-item btn-add"></i></button> -->
+            <!-- <button><i class="fas fa-cart-plus btn-item btn-add"></i></button> -->
           </div>
         </div>
       </form>
@@ -99,15 +104,36 @@
           <th>Qty</th>
           <th>Harga Satuan</th>
           <th>Jumlah</th>
-          <th></th>
+          <th><i class="fas fa-trash"></i></th>
         </tr>
 
         <tr>
           <td>xxxxx xxx xxxx</td>
-          <td>xxx</td>
+          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
           <td>xxxxxx</td>
           <td>xxxxxxxx</td>
-          <td>x</td>
+          <td><i class="fas fa-times btn-item btn-del"></i></td>
+        </tr>
+        <tr>
+          <td>xxxxx xxx xxxx</td>
+          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
+          <td>xxxxxx</td>
+          <td>xxxxxxxx</td>
+          <td><i class="fas fa-times btn-item btn-del"></i></td>
+        </tr>
+        <tr>
+          <td>xxxxx xxx xxxx</td>
+          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
+          <td>xxxxxx</td>
+          <td>xxxxxxxx</td>
+          <td><i class="fas fa-times btn-item btn-del"></i></td>
+        </tr>
+        <tr>
+          <td>xxxxx xxx xxxx xxxxxxxxx xxx</td>
+          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
+          <td>xxxxxx</td>
+          <td>xxxxxxxx</td>
+          <td><i class="fas fa-times btn-item btn-del"></i></td>
         </tr>
       </table>
     </div>

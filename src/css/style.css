@@ -19,6 +19,7 @@ body {
 .container {
   max-width: 1000px;
   margin: 95px auto;
+  border: 1px solid black;
 }
 
 .cols {
@@ -108,7 +109,7 @@ body {
 }
 
 .form-field_item {
-  width: 50%;
+  width: 55%;
 }
 
 .form-field_qty {
@@ -122,25 +123,78 @@ body {
 .btn-add-item {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  width: 8%;
+  width: 3%;
+  margin-bottom: 6px;
 }
 
-.btn-add-item button {
-  width: 100%;
-  height: 35px;
-  border-radius: 15px;
-  border: 1px solid black;
-  background: #E1E1E1;
+.btn-add-item i {
+  font-size: 20px;
+  -webkit-transition: .300ms;
+  transition: .300ms;
 }
 
-.btn-add-item button:hover {
-  cursor: pointer;
-  background: #bfbfbf;
+.btn-add-item i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #keranjang-table {
-  border: 1px solid black;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 42px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+#keranjang-table tr:nth-child(1) {
+  border-bottom: 1px solid black;
+}
+
+#keranjang-table th {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#keranjang-table td {
+  border-right: 1px solid black;
+}
+
+#keranjang-table th:last-child,
+#keranjang-table td:last-child {
+  border-right: none;
+}
+
+#keranjang-table th,
+#keranjang-table td {
+  padding: 5px 7px;
+}
+
+#keranjang-table td:nth-child(2),
+#keranjang-table td:nth-child(5) {
+  text-align: center;
+}
+
+#keranjang-table td:nth-child(3),
+#keranjang-table td:nth-child(4) {
+  text-align: right;
+}
+
+.btn-item {
+  cursor: pointer;
+}
+
+.btn-qty {
+  color: #4b68ff;
+}
+
+.btn-del {
+  color: #c54b4b;
+}
+
+.btn-qty:nth-child(1) {
+  padding-right: 15px;
+}
+
+.btn-qty:nth-child(2) {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */
