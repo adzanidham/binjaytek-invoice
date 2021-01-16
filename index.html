@@ -17,30 +17,30 @@
 <body>
   <div class="container" id="main">
     <div class="section" id="transaksi">
-      <h1 class="section-title">Transaksi</h1>
-      <form action="" id="form_transaksi">
+      <h1 class="section__title">Transaksi</h1>
+      <form action="" class="form" id="form_transaksi">
         <div class="cols">
-          <div class="form-field col col-side-to-side">
-            <label for="date" class="field-label">Date</label>
-            <input type="date" name="date" id="date">
+          <div class="form__field col">
+            <label class="form__field__label" for="date">Date</label>
+            <input class="form__field__input" type="date" name="date" id="date">
           </div>
 
-          <div class="form-field col col-side-to-side">
-            <label for="no_transaksi" class="field-label">No Transaksi</label>
-            <input type="text" name="no_transaksi" id="no_transaksi">
+          <div class="form__field col">
+            <label class="form__field__label" for="no_transaksi">No Transaksi</label>
+            <input class="form__field__input" type="text" name="no_transaksi" id="no_transaksi">
           </div>
         </div>
 
-        <div class="form-field form-field_sell_as">
-          <label for="sell_as" class="field-label">Jual Sebagai</label>
-          <div class="cols">
-            <div class="col col-side-to-side">
-              <input type="radio" name="sell_as" id="bina_jaya" value="bina_jaya">
-              <label class="radio-lable" for="bina_jaya">CV. BINA JAYA TEKNIKA</label>
+        <div class="form__field">
+          <label class="form__field__label" for="sell_as">Jual Sebagai</label>
+          <div class="form__field__input cols">
+            <div class="col">
+              <input class="input_radio_select" type="radio" name="sell_as" id="bina_jaya" value="bina_jaya">
+              <label class="input_radio_label" for="bina_jaya">CV. BINA JAYA TEKNIKA</label>
             </div>
-            <div class="col col-side-to-side">
-              <input type="radio" name="sell_as" id="adimas_putra" value="adimas_putra">
-              <label class="radio-lable" for="adimas_putra">CV. ADIMAS PUTRA</label>
+            <div class="cole">
+              <input class="input_radio_select" type="radio" name="sell_as" id="adimas_putra" value="adimas_putra">
+              <label class="input_radio_label" for="adimas_putra">CV. ADIMAS PUTRA</label>
             </div>
           </div>
         </div>
@@ -48,57 +48,57 @@
     </div>
 
     <div class="section" id="customer">
-      <h1 class="section-title">Customer</h1>
-      <form action="" id="form_customer">
-        <div class="form-field">
-          <label for="customer_name" class="field-label">Nama Customer</label>
-          <input type="text" name="customer_name" id="customer_name">
+      <h1 class="section__title">Customer</h1>
+      <form action="" class="form" id="form_customer">
+        <div class="form__field">
+          <label class="form__field__label" for="customer_name">Nama Customer</label>
+          <input class="form__field__input" type="text" name="customer_name" id="customer_name">
         </div>
 
-        <div class="form-field">
-          <label for="customer_name" class="field-label">Alamat (Jalan)</label>
-          <input type="text" name="address_road" id="address_road">
+        <div class="form__field">
+          <label class="form__field__label" for="customer_name">Alamat (Jalan)</label>
+          <input class="form__field__input" type="text" name="address_road" id="address_road">
         </div>
 
-        <div class="form-field">
-          <label for="address_kecamatan" class="field-label">Alamat (Kecamatan)</label>
-          <input type="text" name="address_kecamatan" id="address_kecamatan">
+        <div class="form__field">
+          <label class="form__field__label" for="address_kecamatan">Alamat (Kecamatan)</label>
+          <input class="form__field__input" type="text" name="address_kecamatan" id="address_kecamatan">
         </div>
 
-        <div class="form-field">
-          <label for="address_city" class="field-label">Alamat (Kota/Kabupaten)</label>
-          <input type="text" name="address_city" id="address_city">
+        <div class="form__field">
+          <label class="form__field__label" for="address_city">Alamat (Kota/Kabupaten)</label>
+          <input class="form__field__label" type="text" name="address_city" id="address_city">
         </div>
       </form>
     </div>
 
     <div class="section" id="keranjang">
-      <h1 class="section-title">Keranjang</h1>
-      <form action="" id="form_keranjang">
+      <h1 class="section__title">Keranjang</h1>
+      <form action="" class="form" id="form_keranjang">
         <div class="cols">
-          <div class="form-field form-field_item col ">
-            <label for="item_name" class="field-label">Nama Barang/Service</label>
-            <input type="text" name="item_name" id="item_name">
+          <div class="form__field form__field--item col">
+            <label class="form__field__label" for="item_name">Nama Barang/Service</label>
+            <input class="form__field__input" type="text" name="item_name" id="item_name">
           </div>
-          <div class="form-field form-field_qty col">
-            <label for="item_qty" class="field-label">Qty</label>
-            <input type="number" name="item_qty" id="item_qty" min="0.1" max="999">
-          </div>
-
-          <div class="form-field form-field_price col ">
-            <label for="item_price" class="field-label">Harga Satuan</label>
-            <input type="text" name="item_price" id="item_price">
+          <div class="form__field form__field--qty col">
+            <label class="form__field__label" for="item_qty">Qty</label>
+            <input class="form__field__input" type="number" name="item_qty" id="item_qty" min="0.1" max="999">
           </div>
 
-          <div class="btn btn-add-item col">
-            <span><i class="fas fa-plus btn-item btn-add"></i></span>
+          <div class="form__field form__field--price col ">
+            <label class="form__field__label" for="item_price">Harga Satuan</label>
+            <input class="form__field__input" type="text" name="item_price" id="item_price">
+          </div>
+
+          <div class="form__button col">
+            <span class="button button_add_item" id="button_add_item"><i class="fas fa-plus"></i></span>
             <!-- <button><i class="fas fa-plus btn-item btn-add"></i></button> -->
             <!-- <button><i class="fas fa-cart-plus btn-item btn-add"></i></button> -->
           </div>
         </div>
       </form>
 
-      <table id="keranjang-table">
+      <table class="table table__keranjang" id="table_keranjang">
         <tr>
           <th>Nama Barang/Service</th>
           <th>Qty</th>
@@ -109,32 +109,56 @@
 
         <tr>
           <td>xxxxx xxx xxxx</td>
-          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
+          <td>
+            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
+              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          </td>
           <td>xxxxxx</td>
           <td>xxxxxxxx</td>
-          <td><i class="fas fa-times btn-item btn-del"></i></td>
+          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
         </tr>
+
         <tr>
+          <td>xxxxx xxx xxxx</td>
+          <td>
+            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
+              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          </td>
+          <td>xxxxxx</td>
+          <td>xxxxxxxx</td>
+          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
+        </tr>
+
+        <tr>
+          <td>xxxxx xxx xxxx</td>
+          <td>
+            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
+              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          </td>
+          <td>xxxxxx</td>
+          <td>xxxxxxxx</td>
+          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
+        </tr>
+
+        <tr>
+          <td>xxxxx xxx xxxx</td>
+          <td>
+            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
+              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          </td>
+          <td>xxxxxx</td>
+          <td>xxxxxxxx</td>
+          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
+        </tr>
+
+
+        <!-- <tr>
           <td>xxxxx xxx xxxx</td>
           <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
           <td>xxxxxx</td>
           <td>xxxxxxxx</td>
           <td><i class="fas fa-times btn-item btn-del"></i></td>
-        </tr>
-        <tr>
-          <td>xxxxx xxx xxxx</td>
-          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
-          <td>xxxxxx</td>
-          <td>xxxxxxxx</td>
-          <td><i class="fas fa-times btn-item btn-del"></i></td>
-        </tr>
-        <tr>
-          <td>xxxxx xxx xxxx xxxxxxxxx xxx</td>
-          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
-          <td>xxxxxx</td>
-          <td>xxxxxxxx</td>
-          <td><i class="fas fa-times btn-item btn-del"></i></td>
-        </tr>
+        </tr> -->
       </table>
     </div>
   </div>
