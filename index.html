@@ -15,150 +15,175 @@
 </head>
 
 <body>
-  <div class="container" id="main">
-    <div class="section" id="transaksi">
+  <div class="container main">
+    <div class="section section__transaksi" id="transaksi">
       <h1 class="section__title">Transaksi</h1>
-      <form action="" class="form" id="form_transaksi">
+      <form action="" class="section__form" id="form_transaksi">
         <div class="cols">
-          <div class="form__field col">
+          <div class="form__field col_side_to_side">
             <label class="form__field__label" for="date">Date</label>
-            <input class="form__field__input" type="date" name="date" id="date">
+            <input class="form__field__input input-text" type="date" name="date" id="date">
           </div>
 
-          <div class="form__field col">
+          <div class="form__field col_side_to_side">
             <label class="form__field__label" for="no_transaksi">No Transaksi</label>
-            <input class="form__field__input" type="text" name="no_transaksi" id="no_transaksi">
+            <input class="form__field__input input-text" type="text" name="no_transaksi" id="no_transaksi">
           </div>
         </div>
 
         <div class="form__field">
           <label class="form__field__label" for="sell_as">Jual Sebagai</label>
-          <div class="form__field__input cols">
-            <div class="col">
-              <input class="input_radio_select" type="radio" name="sell_as" id="bina_jaya" value="bina_jaya">
-              <label class="input_radio_label" for="bina_jaya">CV. BINA JAYA TEKNIKA</label>
+          <div class="form__field__input input-radio cols">
+            <div class="col_side_to_side">
+              <input class="form__radio__item" type="radio" name="sell_as" id="bina_jaya" value="bina_jaya">
+              <label class="form__radio__label" for="bina_jaya">CV. BINA JAYA TEKNIKA</label>
             </div>
-            <div class="cole">
-              <input class="input_radio_select" type="radio" name="sell_as" id="adimas_putra" value="adimas_putra">
-              <label class="input_radio_label" for="adimas_putra">CV. ADIMAS PUTRA</label>
+            <div class="col_side_to_side">
+              <input class="form__radio__item" type="radio" name="sell_as" id="adimas_putra" value="adimas_putra">
+              <label class="form__radio__label" for="adimas_putra">CV. ADIMAS PUTRA</label>
             </div>
           </div>
         </div>
       </form>
     </div>
 
-    <div class="section" id="customer">
+    <div class="section section__customer" id="customer">
       <h1 class="section__title">Customer</h1>
-      <form action="" class="form" id="form_customer">
+      <form action="" class="section__form" id="form_customer">
         <div class="form__field">
           <label class="form__field__label" for="customer_name">Nama Customer</label>
-          <input class="form__field__input" type="text" name="customer_name" id="customer_name">
+          <input class="form__field__input input-text" type="text" name="customer_name" id="customer_name">
         </div>
 
         <div class="form__field">
           <label class="form__field__label" for="customer_name">Alamat (Jalan)</label>
-          <input class="form__field__input" type="text" name="address_road" id="address_road">
+          <input class="form__field__input input-text" type="text" name="address_road" id="address_road">
         </div>
 
         <div class="form__field">
           <label class="form__field__label" for="address_kecamatan">Alamat (Kecamatan)</label>
-          <input class="form__field__input" type="text" name="address_kecamatan" id="address_kecamatan">
+          <input class="form__field__input input-text" type="text" name="address_kecamatan" id="address_kecamatan">
         </div>
 
         <div class="form__field">
           <label class="form__field__label" for="address_city">Alamat (Kota/Kabupaten)</label>
-          <input class="form__field__label" type="text" name="address_city" id="address_city">
+          <input class="form__field__input input-text" type="text" name="address_city" id="address_city">
         </div>
       </form>
     </div>
 
-    <div class="section" id="keranjang">
+    <div class="section section__keranjang" id="keranjang">
       <h1 class="section__title">Keranjang</h1>
-      <form action="" class="form" id="form_keranjang">
+      <form action="" class="section__form" id="form_keranjang">
         <div class="cols">
-          <div class="form__field form__field--item col">
+          <div class="form__field__label form__field--item">
             <label class="form__field__label" for="item_name">Nama Barang/Service</label>
-            <input class="form__field__input" type="text" name="item_name" id="item_name">
+            <input class="form__field__input input-text" type="text" name="item_name" id="item_name">
           </div>
-          <div class="form__field form__field--qty col">
+          <div class="form__field form__field--qty">
             <label class="form__field__label" for="item_qty">Qty</label>
-            <input class="form__field__input" type="number" name="item_qty" id="item_qty" min="0.1" max="999">
+            <input class="form__field__input input-text" type="number" name="item_qty" id="item_qty" min="0" max="999">
           </div>
 
-          <div class="form__field form__field--price col ">
+          <div class="form__field form__field--price">
             <label class="form__field__label" for="item_price">Harga Satuan</label>
-            <input class="form__field__input" type="text" name="item_price" id="item_price">
+            <input class="form__field__input input-text" type="text" name="item_price" id="item_price">
           </div>
 
-          <div class="form__button col">
-            <span class="button button_add_item" id="button_add_item"><i class="fas fa-plus"></i></span>
-            <!-- <button><i class="fas fa-plus btn-item btn-add"></i></button> -->
-            <!-- <button><i class="fas fa-cart-plus btn-item btn-add"></i></button> -->
+          <div class="form__field form__field--btn">
+            <span class="form__btn btn btn--add_item" id="btn_add_item"><i class="fas fa-plus"></i></span>
           </div>
         </div>
       </form>
 
-      <table class="table table__keranjang" id="table_keranjang">
+      <table class="section__table section__table--item" id="table_keranjang">
         <tr>
           <th>Nama Barang/Service</th>
           <th>Qty</th>
-          <th>Harga Satuan</th>
-          <th>Jumlah</th>
+          <th>Satuan<br>(Rp.)</th>
+          <th>Jumlah<br>(Rp.)</th>
           <th><i class="fas fa-trash"></i></th>
         </tr>
 
         <tr>
-          <td>xxxxx xxx xxxx</td>
-          <td>
-            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
-              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          <td>IT, YA-20L DCP Isi 6 Kg > NP-6P DCP Isi 6Kg</td>
+          <td class="text-center">
+            <div class="table__qty">
+              <span class="table__btn btn table__qty--btn table__qty--btn__decrease"><i class="fas fa-minus"></i></span>
+              <div class="table__qty__value">99999</div>
+              <span class="table__btn btn table__qty--btn table__qty--btn__increase"><i class="fas fa-plus"></i></span>
+            </div>
           </td>
-          <td>xxxxxx</td>
-          <td>xxxxxxxx</td>
-          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
+          <td class="text-right">385000</td>
+          <td class="text-right">385000</td>
+          <td class="text-center">
+            <div class="table__action">
+              <span class="table__btn btn table__action--btn table__action--btn__remove"><i
+                  class="fas fa-times"></i></span>
+            </div>
+          </td>
         </tr>
 
         <tr>
-          <td>xxxxx xxx xxxx</td>
-          <td>
-            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
-              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          <td>IT, YA-20L DCP Isi 6 Kg > NP-6P DCP Isi 6Kg</td>
+          <td class="text-center">
+            <div class="table__qty">
+              <span class="table__btn btn table__qty--btn table__qty--btn__decrease"><i class="fas fa-minus"></i></span>
+              <div class="table__qty__value">99999</div>
+              <span class="table__btn btn table__qty--btn table__qty--btn__increase"><i class="fas fa-plus"></i></span>
+            </div>
           </td>
-          <td>xxxxxx</td>
-          <td>xxxxxxxx</td>
-          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
+          <td class="text-right">385000</td>
+          <td class="text-right">385000</td>
+          <td class="text-center">
+            <div class="table__action">
+              <span class="table__btn btn table__action--btn table__action--btn__remove"><i
+                  class="fas fa-times"></i></span>
+            </div>
+          </td>
         </tr>
 
         <tr>
-          <td>xxxxx xxx xxxx</td>
-          <td>
-            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
-              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          <td>IT, YA-20L DCP Isi 6 Kg > NP-6P DCP Isi 6Kg</td>
+          <td class="text-center">
+            <div class="table__qty">
+              <span class="table__btn btn table__qty--btn table__qty--btn__decrease"><i class="fas fa-minus"></i></span>
+              <div class="table__qty__value">99999</div>
+              <span class="table__btn btn table__qty--btn table__qty--btn__increase"><i class="fas fa-plus"></i></span>
+            </div>
           </td>
-          <td>xxxxxx</td>
-          <td>xxxxxxxx</td>
-          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
+          <td class="text-right">385000</td>
+          <td class="text-right">385000</td>
+          <td class="text-center">
+            <div class="table__action">
+              <span class="table__btn btn table__action--btn table__action--btn__remove"><i
+                  class="fas fa-times"></i></span>
+            </div>
+          </td>
         </tr>
 
         <tr>
-          <td>xxxxx xxx xxxx</td>
-          <td>
-            <span class="button button_decrease_qty"><i class="fas fa-minus"></i></span> <span
-              class="qty_value">xxx</span> <span class="button button_increase_qty"><i class="fas fa-plus"></i></span>
+          <td>IT, YA-20L DCP Isi 6 Kg > NP-6P DCP Isi 6Kg</td>
+          <td class="text-center">
+            <div class="table__qty">
+              <span class="table__btn btn table__qty--btn table__qty--btn__decrease"><i class="fas fa-minus"></i></span>
+              <div class="table__qty__value">99999</div>
+              <span class="table__btn btn table__qty--btn table__qty--btn__increase"><i class="fas fa-plus"></i></span>
+            </div>
           </td>
-          <td>xxxxxx</td>
-          <td>xxxxxxxx</td>
-          <td><span class="button button_remove_item"><i class="fas fa-times"></i></span></td>
+          <td class="text-right">385000</td>
+          <td class="text-right">385000</td>
+          <td class="text-center">
+            <div class="table__action">
+              <span class="table__btn btn table__action--btn table__action--btn__remove"><i
+                  class="fas fa-times"></i></span>
+            </div>
+          </td>
         </tr>
+      </table>
 
+      <table class="section__table section__table--sum">
 
-        <!-- <tr>
-          <td>xxxxx xxx xxxx</td>
-          <td><i class="fas fa-minus btn-item btn-qty"></i> xxx <i class="fas fa-plus btn-item btn-qty"></i></td>
-          <td>xxxxxx</td>
-          <td>xxxxxxxx</td>
-          <td><i class="fas fa-times btn-item btn-del"></i></td>
-        </tr> -->
       </table>
     </div>
   </div>
